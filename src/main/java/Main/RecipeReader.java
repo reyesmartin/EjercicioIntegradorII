@@ -2,6 +2,7 @@ package Main;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -101,19 +102,34 @@ public class RecipeReader {
 			e.printStackTrace();
 		}
 
-		for (Receta receta : recetas) {
-			System.out.println(receta.getNombre());
-			System.out.println("Tipo de comida: " + receta.getTipo());
-			System.out.println("Ingredientes: ");
-			for (String ingrediente : receta.getIngredientes()) {
-				System.out.println("- " + ingrediente);
+		try {
+			FileWriter fw = new FileWriter("Jenkinsfile");
+
+			fw.write("pipeline {\n");
+			fw.write("    agent any\n");
+			fw.write("    stages {\n");
+
+			for (Receta receta : recetas) {
+				fw.write("        stage('" + receta.getNombre() + "') {\n");
+				fw.write("            steps {\n");
+				fw.write("                echo 'Tipo de comida: " + receta.getTipo() + "'\n");
+				fw.write("                echo 'Ingredientes:'\n");
+				for (String ingrediente : receta.getIngredientes()) {
+					fw.write("                echo '- " + ingrediente + "'\n");
+				}
+				fw.write("                echo 'Tiempo de cocción: " + receta.getTiempoDeCoccion() + "'\n");
+				fw.write(" echo 'Calorías: " + receta.getCalorias() + "'\n");
+				fw.write(" }\n");
+				fw.write(" }\n");
 			}
+			fw.write("    }\n");
+			fw.write("}\n");
 
-			System.out.println("Tiempo de cocción: " + receta.getTiempoDeCoccion() + " minutos");
-
-			System.out.println("Calorías por porción: " + receta.getCalorias()+ " kcal");
-
-			System.out.println();
+			fw.close();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
+
+		System.out.println("Jenkinsfile generado exitosamente.");
 	}
 }

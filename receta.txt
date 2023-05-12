@@ -1,0 +1,84 @@
+Pollo al horno
+- Tipo de comida: Salado
+- 1 pollo entero
+- 4 patatas
+- 1 cebolla
+- 3 dientes de ajo
+- 1 limón
+- Aceite de oliva
+- Sal
+- Pimienta
+
+Ensalada César
+- Tipo de comida: Salado
+- Lechuga
+- Pollo cocido
+- Queso parmesano
+- Tocino
+- Pan
+- Aceite de oliva
+- Mostaza
+- Anchoas
+- Ajo
+- Vinagre
+- Sal
+- Pimienta
+
+Arroz con mariscos
+- Tipo de comida: Salado
+- Arroz
+- Langostinos
+- Calamares
+- Pulpo
+- Tomate
+- Cebolla
+- Pimiento
+- Ajo
+- Perejil
+- Caldo de pescado
+- Aceite de oliva
+- Sal
+- Pimienta
+
+Paella
+- Tipo de comida: Salado
+- Arroz
+- Pollo
+- Conejo
+- Judías verdes
+- Garrofón
+- Tomate
+- Pimiento rojo
+- Pimiento verde
+- Ajo
+- Aceite de oliva
+- Sal
+- Pimentón
+- Azafrán
+- Caldo de pollo o de pescado
+
+Tortilla de patatas
+- Tipo de comida: Salado
+- Patatas
+- Cebolla
+- Huevos
+- Aceite de oliva
+- Sal
+- Pimienta
+
+Tarta de manzana
+- Tipo de comida: Dulce
+- Harina
+- Mantequilla
+- Azúcar
+- Sal
+- Agua fría
+- Manzanas
+- Canela
+
+Flan de vainilla
+- Tipo de comida: Dulce
+- Huevos
+- Leche
+- Azúcar
+- Vainilla
